@@ -19,3 +19,15 @@ get '/minedminds' do
 	#@title = 'Mined Minds'
 	erb :minedminds
 end
+
+get '/header' do
+erb :header
+end
+
+get '/menu_bar' do
+erb :menu_bar
+end
+
+get '/footer' do
+erb :footer
+end
