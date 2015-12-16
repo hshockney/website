@@ -1,39 +1,12 @@
 <!DOCTYPE html>
 <html>
-<head><title>Welcome to Mined Minds</title></head>
-<A href="http://minedminds.org" target="_new">
-<center><img src="banner2.jpg"></center>
-</A>
 
 
 
 
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #696969;
-}
-li {
-    float: left;
-}
-li a {
-	border-right: 1px solid #bbb;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-a:hover:not(.active) {
-    background-color: #008B8B;
-}
-.active {
-background-color:#0000FF;
-}
-</style>
+
+
+
 <br>
 <br>
 <script language="JavaScript1.1">
@@ -61,39 +34,11 @@ winslide.focus()
 //-->
 </script>
 </head>
-<body bgcolor="#0066CC">
-<ul>
-  <li><a href="http://localhost:4567/">Home</a></li>
-  <li><a href="http://localhost:4567/rules">Rules</a></li>
-  <li><a class="active"href="http://localhost:4567/playgame">Play Game</a></li>
-  <li><a href="http://localhost:4567/minedminds">Mined Minds</a></li>
-</ul>
+
+
 <br>
 <br>
-<a href="javascript:gotoshow()"><center><img src="mm.png" name="slide" border=0 width=300 height=375></center></a>
-<script>
-<!--
-//configure the paths of the images, plus corresponding target links
-slideshowimages("board.png")
-slideshowlinks("https://github.com/marv070/web_tic_tac_toe/blob/master/online_version.rb")
-//configure the speed of the slideshow, in miliseconds
-var slideshowspeed=4000
-var whichlink=0
-var whichimage=0
-function slideit(){
-if (!document.images)
-return
-document.images.slide.src=slideimages[whichimage].src
-whichlink=whichimage
-if (whichimage<slideimages.length-1)
-whichimage++
-else
-whichimage=0
-setTimeout("slideit()",slideshowspeed)
-}
-slideit()
-//-->
-</script>
+<A HREF="https://github.com/hshockney/tictactoeweb.rb"><center><IMG SRC="board.png" ALT="Play Game"></center></A>
 
 <HTML>
 <head>
@@ -108,6 +53,5 @@ slideit()
 </HTML>
 
 </script>
-<p align="center"><font face="consolas" size="2">This Page was created by Mined Minds</font><br>
-<font face="consolas, consolas" size="2"><a href="mailto:info@minedminds.org">Contact Us!</a></a></font></p>
+
 </body>

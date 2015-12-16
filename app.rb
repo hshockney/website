@@ -1,6 +1,22 @@
 require 'sinatra'
 require 'rubygems'
 
+def load_pictures
+  Dir.glob("public/*.{png,PNG,jpg,JPG}")
+end
+
+# get '/' do
+   # @pictures = load_pictures
+   # erb :index
+# end
+
+
+
+
+
+
+
+
 get '/' do
   erb :index
 end
@@ -20,14 +36,6 @@ get '/minedminds' do
 	erb :minedminds
 end
 
-get '/header' do
-erb :header
-end
-
-get '/menu_bar' do
-erb :menu_bar
-end
-
-get '/footer' do
-erb :footer
+get '/layout' do
+	erb :layout
 end
