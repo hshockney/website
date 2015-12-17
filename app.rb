@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'rubygems'
 
+
+
 def load_pictures
   Dir.glob("public/*.{png,PNG,jpg,JPG}")
 end
@@ -18,21 +20,22 @@ end
 
 
 get '/' do
+  @title = 'Welcome to Mined Minds'
   erb :index
 end
 
 get '/rules' do
-  #@title = 'Tic Tac Toe Rules'
+  @title = 'Tic Tac Toe Rules'
   erb :rules
 end
 
 get '/playgame' do
-	#@title = 'Play Tic Tac Toe!'
+	@title = 'Play Tic Tac Toe!'
 	erb :playgame
 end
 
 get '/minedminds' do
-	#@title = 'Mined Minds'
+	@title = 'Mined Minds'
 	erb :minedminds
 end
 
